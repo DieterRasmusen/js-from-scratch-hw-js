@@ -7,22 +7,20 @@
 
 
 
-let score = 70 // тестовое значение, можно изменять
+let score; // тестовое значение, можно изменять
 
 score = prompt("Введите Ваш балл");
 score = Number(score); // преобразуем введенное значение к числу
 let grade = score;
-if (isNaN(score) || score < 0 || score > 100){   // проверяем, что введено правильное число
-    console.log("Введите корректное значение от от 0 до 100");
-} else is (score <= 49) {
-    alert("Ваша оценка 'F'");
+if (score <= 49) {
+    console.log("Ваша оценка 'F'");
 } else if (score <= 69) {
-    alert("Ваша оценка 'D'");
+    console.log("Ваша оценка 'D'");
 } else if (score <= 79) {
-    alert("Ваша оценка 'C'");
+    console.log("Ваша оценка 'C'");
 } else if (score <= 89) {
-    alert("Ваша оценка 'B'");
+    console.log("Ваша оценка 'B'");
 } else {
-    alert("Ваша оценка 'A'");
+    console.log("Ваша оценка 'A'");
 }
 // your code

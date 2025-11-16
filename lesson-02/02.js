@@ -6,13 +6,13 @@
 
 * Для успешного прохождения тестов не меняйте названия переменных!
 */
-let isWinningDouble = false; // Изначально задаем, проигрыш, чтобы в цикл задать условие выигрыша
+let isWinningDouble = false; 
 while (!isWinningDouble) {
-  let dice1 = Math.floor(Math.random() * 6) +1; // бросок кубиков, которые имеют 6 граней, "+1" чтобы сместить число с 0
+  let dice1 = Math.floor(Math.random() * 6) +1; 
   console.log('Первый бросок: ' + dice1);
   let dice2 = Math.floor(Math.random() * 6) +1;
   console.log('Второй бросок: ' + dice2);
-  if((dice1 === dice2) && (dice1 + dice2 >= 8)) { // условие определения победы
+  if((dice1 === dice2) && (dice1 + dice2 >= 8)) { 
     isWinningDouble = true;
     console.log("Выигрышный дубль!") 
   } else {
