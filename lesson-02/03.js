@@ -7,20 +7,20 @@
 
 
 
-let score; // тестовое значение, можно изменять
-
-score = prompt("Введите Ваш балл");
-score = Number(score); // преобразуем введенное значение к числу
-let grade = score;
-if (score <= 49) {
-    console.log("Ваша оценка 'F'");
-} else if (score <= 69) {
-    console.log("Ваша оценка 'D'");
-} else if (score <= 79) {
-    console.log("Ваша оценка 'C'");
-} else if (score <= 89) {
-    console.log("Ваша оценка 'B'");
-} else {
-    console.log("Ваша оценка 'A'");
+const score = 75; // тестовое значение, можно изменять
+let grade;
+if (score < 50) {
+    grade = "F";
+} 
+else if (score >= 50 && score < 70) {
+    grade = "D";
+} 
+else if (score >= 70 && score < 80) {
+    grade = "C";
+} 
+else if (score >= 80 && score < 90) {
+    grade = "B";
+} 
+else {
+    grade = "A";
 }
-// your code
