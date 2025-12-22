@@ -23,4 +23,11 @@ const oddNumbers = filter(numbers, (element, index) => {
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
 
-const filter = () => {}
+// const filter = () => {}
+
+const numbers = [0, 2, -3, 34, 66, -944, 0.4446];
+const newNumber = numbers.filter((element, index) => {
+  return element > 0 && element % 2 == 0;
+})
+
+
