@@ -25,17 +25,17 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 
 // const filter = () => {}
 
+const numbers = [50, 60, 70, 80, 90,100,110,120,130,140,150]
 
-function filter(array, callback) => {
-  const result = []; 
+function filter(array, callback) {
+  const newArray = []; 
   for (let i = 0; i<array.length; i++) {
     const element = array[i]; // выцепляем текущий элемент
-    const shouldInclude = callback(element, i); // преобразуем его
-    if(shouldInclude) {
-      result.push(element)
+    if(callback(element, i)) {
+      newArray.push(element)
     }
   }
-  return result;
+  return newArray;
 };
 
 
