@@ -26,12 +26,12 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 // const filter = () => {}
 
 
-function filter(array, callback) {
-  let result = []; 
+function filter(array, callback) => {
+  const result = []; 
   for (let i = 0; i<array.length; i++) {
     const element = array[i]; // выцепляем текущий элемент
     const shouldInclude = callback(element, i); // преобразуем его
-    if(shouldInclude){
+    if(shouldInclude) {
       result.push(element)
     }
   }
