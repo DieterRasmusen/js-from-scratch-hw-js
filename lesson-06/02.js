@@ -29,12 +29,12 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
   const map = (array, callback) => {
     const result = [];
     for (let i = 0; i < array.length; i++) {
-      const element = array = [i];
+      const element = array[i];
       const newValue = callback(element, i);
       result.push(newValue)
     }
-    return result;
-  }
+    return result
+  };
 
 
 
@@ -42,4 +42,4 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 // const newNumbers = [...numbers];
 // const result = newNumbers.map((element, index) => {
 //   return element * 2; 
-// });
+// }

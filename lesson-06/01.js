@@ -25,9 +25,26 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 
 // const filter = () => {}
 
-const numbers = [0, 2, -3, 34, 66, -944, 0.4446];
-const newNumber = numbers.filter((element, index) => {
-  return element > 0 && element % 2 == 0;
-})
+
+function filter(array, callback) {
+  let result = []; 
+  for (let i = 0; i<array.length; i++) {
+    const element = array[i]; // выцепляем текущий элемент
+    const shouldInclude = callback(element, i); // преобразуем его
+    if(shouldInclude){
+      result.push(element)
+    }
+  }
+  return result;
+};
+
+
+
+
+
+// const numbers = [0, 2, -3, 34, 66, -944, 0.4446];
+// const newNumber = numbers.filter((element, index) => {
+//   return element > 0 && element % 2 == 0;
+// })
 
 
