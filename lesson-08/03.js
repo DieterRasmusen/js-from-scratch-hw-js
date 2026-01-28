@@ -10,5 +10,11 @@
 */
 
 function truncate(str, maxLength) {
-  // your code
+  let newStr = "";
+  if(str.legth <= maxLength) {
+    newStr = str;
+  } else {
+    newStr =  str.slice(maxLength) + "..."
+  }
+  return newStr
 }

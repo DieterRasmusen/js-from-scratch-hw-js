@@ -6,4 +6,15 @@
   Другой вариант - использовать метод split строк, и метод массива join.
 */
 
-function capitalizeWords() {}
+function capitalizeWords(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) { // проверяем условие: либо находимся на первом символе (i===0),
+    if(i === 0 || str[i - 1] === " ") { //  либо предыдущий символ (str[i - 1])- это пробел. Первое слово начинается с индекса [0], все остальные с пробела
+      result += str[i].toUpperCase();
+    } else {
+      result += str[i]
+    }
+  }
+  return result;
+}
+console.log(capitalizeWords("hello world from javascript"))
