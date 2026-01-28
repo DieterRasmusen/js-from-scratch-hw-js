@@ -4,6 +4,9 @@
  */
 
 function isNumeric(str) {
+  if (str.trim() === "") {
+    return false;
+  }
   const num = Number(str);
   return !isNaN(num) && isFinite(num);
 }
