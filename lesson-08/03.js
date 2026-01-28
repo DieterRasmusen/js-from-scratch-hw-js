@@ -10,11 +10,10 @@
 */
 
 function truncate(str, maxLength) {
-  let newStr = "";
-  if(str.length <= maxLength) {
-    newStr = str;
-  } else {
-    newStr =  str.slice(0, maxLength) + "..."
-  return newStr
+  if (str.length > maxLength){
+    const newStr = str.slice(0, maxLength) + "...";
+    return newStr
+} else {
+  return str
 }
 }
